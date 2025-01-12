@@ -1,0 +1,121 @@
+/* Reset básico */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* General */
+body {
+  background-color: #9400d3;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Efecto dinámico en enlaces */
+a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, top 0.2s ease;
+  position: relative;
+}
+
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  top: -5px; /* Pequeño desplazamiento hacia arriba */
+}
+
+/* Encabezado */
+header {
+  background-color: #800080;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Sección principal */
+.hero {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sección de juegos */
+.juegos {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las portadas */
+  padding: 20px;
+}
+
+.juego {
+  text-align: center;
+}
+
+/* Carátulas de Nintendo - Diseño horizontal (tamaño uniforme) */
+.nintendo img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 50px solid #fff;
+  border-radius: 8px;
+}
+
+/* Carátulas de Sega - Diseño vertical (tamaño uniforme) */
+.sega img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 50px solid #fff;
+  border-radius: 8px;
+}
+
+.juego h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Imagen de ficha técnica */
+.imagen-juego img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #800080;
+  padding: 10px;
+  font-size: 0.9rem;
+}
